@@ -21,7 +21,7 @@ class HomeScreen extends Component {
 
   componentDidMount() {
     fetch(
-      `https://newsapi.org/v2/top-headlines?country=us&apiKey=${config.API_KEY}`
+      `https://newsapi.org/v2/everything?q=inspire?&apiKey=${config.API_KEY}`
     )
       .then((res) => res.json())
       .then((response) => {

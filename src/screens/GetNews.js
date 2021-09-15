@@ -24,7 +24,7 @@ class GetNews extends Component {
     });
 
     fetch(
-      `https://newsapi.org/v2/top-headlines?category=${this.props.route.params.category}&country=in&apiKey=${config.API_KEY}`,
+      `https://newsapi.org/v2/top-headlines?category=${this.props.route.params.category}&country=uk&apiKey=${config.API_KEY}`,
     )
       .then(res => res.json())
       .then(response => {
